@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Lista de Itens</h1>
+  <ul class="item-list">
+    <li *ngFor="let item of items">
+      <img [src]="item.image" alt="Imagem do item" />
+      <h3>{{ item.name }}</h3>
+      <p>Quantidade disponível: {{ item.quantity }}</p>
+      <label>
+        Quantidade desejada:
+        <input
+          type="number"
+          [(ngModel)]="selectedQuantities[item._id]"
+          min="1"
+          max="{{ item.quantity }}"
+        />
+      </label>
+    </li>
+  </ul>
+  <button (click)="submitItems()">Enviar Seleção</button>
+</div>

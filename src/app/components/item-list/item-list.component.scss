@@ -1,0 +1,23 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .item-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .item-list li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  img {
+    max-width: 100px;
+    border-radius: 5px;
+  }
+  
